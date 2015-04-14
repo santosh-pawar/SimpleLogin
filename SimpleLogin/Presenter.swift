@@ -9,22 +9,30 @@
 import Foundation
 import UIKit
 
-class Presenter {
+class Presenter: NSObject, LoginModuleInterface {
     
-    var loginView:LoginView!
-    var interactor:Interactor!
-    var routing:Routing!
-    var registerView:RegisterView!
+    var loginView:LoginView?
+    var registerView:RegisterView?
+    var protectedView:ProtectedView?
+    var interactor:Interactor?
+    var routing : Routing?
+    var loginWireframe : LoginWireframe?
     
-    init(){
-        
-    }
+    
+//    init(){
+//        loginView = LoginView()
+//    }
     
     func didUserRequestLoinWithUser(userName:String,password:String){
-        self.interactor.loginWithUser(userName, password: password)
+        interactor!.loginWithUser(userName, password: password)
     }
     
-    func didUserTapRegister(){
-        routing?.navigateToRegisterView(registerView)
+    func registerNewUser() {
+        loginWireframe?.presentRegisterInterface()
     }
+    
+    func login() {
+        //
+    }
+    
 }

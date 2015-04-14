@@ -13,23 +13,25 @@ class LoginView: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    var presenter:Presenter!
+    var presenter:Presenter?
+    
+    var eventHandler:LoginModuleInterface?
     
     //MARK: LifeCycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    class func classString() -> String {
-        return NSStringFromClass(self)
-    }
+//    class func classString() -> String {
+//        return NSStringFromClass(self)
+//    }
     
     //MARK:ActionMethods
     @IBAction func loginButtonTapped(sender: AnyObject) {
-        self.presenter.didUserRequestLoinWithUser(emailTextField.text, password: passwordTextField.text)
+        presenter!.didUserRequestLoinWithUser(emailTextField.text, password: passwordTextField.text)
     }
     
     @IBAction func registerButtonTapped(sender: AnyObject) {
-        self.presenter.didUserTapRegister()
+        eventHandler?.registerNewUser()
     }
 }

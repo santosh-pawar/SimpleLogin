@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>006F5565-A942-4F7F-B1D7-EC39C3FE3A6F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SimpleLogin</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>307B2F90BC889D89EA233DC2572E70C5E1A53371</key>
+		<string>https://github.com/santosh-pawar/SimpleLogin.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SimpleLogin.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>307B2F90BC889D89EA233DC2572E70C5E1A53371</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/santosh-pawar/SimpleLogin.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>307B2F90BC889D89EA233DC2572E70C5E1A53371</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>307B2F90BC889D89EA233DC2572E70C5E1A53371</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SimpleLogin</string>
+		</dict>
+	</array>
+</dict>
+</plist>

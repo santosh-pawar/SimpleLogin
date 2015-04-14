@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C20EBB61ADDA6C800C2C7D6 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C20EBB51ADDA6C800C2C7D6 /* AppDependencies.swift */; };
+		2C20EBB81ADDA78300C2C7D6 /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C20EBB71ADDA78300C2C7D6 /* LoginWireframe.swift */; };
+		2C20EBBA1ADDA80800C2C7D6 /* RegisterWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C20EBB91ADDA80800C2C7D6 /* RegisterWireframe.swift */; };
+		2C20EBBC1ADDA86800C2C7D6 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C20EBBB1ADDA86800C2C7D6 /* RegisterPresenter.swift */; };
+		2C20EBBE1ADDB3ED00C2C7D6 /* LoginModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C20EBBD1ADDB3ED00C2C7D6 /* LoginModuleInterface.swift */; };
+		2C20EBC01ADDB98D00C2C7D6 /* RegisterViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C20EBBF1ADDB98D00C2C7D6 /* RegisterViewInterface.swift */; };
 		AA1160061ADCAB2300422271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1160051ADCAB2300422271 /* AppDelegate.swift */; };
 		AA11600B1ADCAB2300422271 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1160091ADCAB2300422271 /* Main.storyboard */; };
 		AA11600D1ADCAB2300422271 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA11600C1ADCAB2300422271 /* Images.xcassets */; };
@@ -32,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C20EBB51ADDA6C800C2C7D6 /* AppDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		2C20EBB71ADDA78300C2C7D6 /* LoginWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWireframe.swift; sourceTree = "<group>"; };
+		2C20EBB91ADDA80800C2C7D6 /* RegisterWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterWireframe.swift; sourceTree = "<group>"; };
+		2C20EBBB1ADDA86800C2C7D6 /* RegisterPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		2C20EBBD1ADDB3ED00C2C7D6 /* LoginModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModuleInterface.swift; sourceTree = "<group>"; };
+		2C20EBBF1ADDB98D00C2C7D6 /* RegisterViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewInterface.swift; sourceTree = "<group>"; };
 		AA1160001ADCAB2300422271 /* SimpleLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA1160041ADCAB2300422271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA1160051ADCAB2300422271 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,11 +102,17 @@
 			isa = PBXGroup;
 			children = (
 				AA1160051ADCAB2300422271 /* AppDelegate.swift */,
+				2C20EBB71ADDA78300C2C7D6 /* LoginWireframe.swift */,
+				2C20EBB91ADDA80800C2C7D6 /* RegisterWireframe.swift */,
+				2C20EBBB1ADDA86800C2C7D6 /* RegisterPresenter.swift */,
+				2C20EBB51ADDA6C800C2C7D6 /* AppDependencies.swift */,
 				AA1160311ADCB35A00422271 /* ProtectedView.swift */,
 				AA11602D1ADCB30A00422271 /* LoginView.swift */,
+				2C20EBBD1ADDB3ED00C2C7D6 /* LoginModuleInterface.swift */,
 				AA11602F1ADCB32200422271 /* RegisterView.swift */,
 				AA1160271ADCB2CC00422271 /* Interactor.swift */,
 				AA1160291ADCB2DF00422271 /* Presenter.swift */,
+				2C20EBBF1ADDB98D00C2C7D6 /* RegisterViewInterface.swift */,
 				AA11602B1ADCB2F400422271 /* Entity.swift */,
 				AA1160251ADCAC8F00422271 /* Routing.swift */,
 				AA1160091ADCAB2300422271 /* Main.storyboard */,
@@ -233,10 +251,16 @@
 				AA11602E1ADCB30A00422271 /* LoginView.swift in Sources */,
 				AA1160061ADCAB2300422271 /* AppDelegate.swift in Sources */,
 				AA11602C1ADCB2F400422271 /* Entity.swift in Sources */,
+				2C20EBBE1ADDB3ED00C2C7D6 /* LoginModuleInterface.swift in Sources */,
+				2C20EBBA1ADDA80800C2C7D6 /* RegisterWireframe.swift in Sources */,
+				2C20EBC01ADDB98D00C2C7D6 /* RegisterViewInterface.swift in Sources */,
 				AA1160321ADCB35A00422271 /* ProtectedView.swift in Sources */,
 				AA1160281ADCB2CC00422271 /* Interactor.swift in Sources */,
 				AA1160301ADCB32200422271 /* RegisterView.swift in Sources */,
+				2C20EBBC1ADDA86800C2C7D6 /* RegisterPresenter.swift in Sources */,
+				2C20EBB61ADDA6C800C2C7D6 /* AppDependencies.swift in Sources */,
 				AA1160261ADCAC8F00422271 /* Routing.swift in Sources */,
+				2C20EBB81ADDA78300C2C7D6 /* LoginWireframe.swift in Sources */,
 				AA11602A1ADCB2DF00422271 /* Presenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,6 +389,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SimpleLogin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -375,6 +400,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SimpleLogin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -393,6 +419,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = SimpleLoginTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleLogin.app/SimpleLogin";
@@ -408,6 +435,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = SimpleLoginTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleLogin.app/SimpleLogin";
@@ -433,6 +461,7 @@
 				AA1160211ADCAB2300422271 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA1160221ADCAB2300422271 /* Build configuration list for PBXNativeTarget "SimpleLoginTests" */ = {
 			isa = XCConfigurationList;
@@ -441,6 +470,7 @@
 				AA1160241ADCAB2300422271 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

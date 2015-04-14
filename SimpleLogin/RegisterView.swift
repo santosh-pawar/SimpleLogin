@@ -14,16 +14,16 @@ class RegisterView: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var reTypePasswordTextField: UITextField!
     
+    var presenter:Presenter?
+    
+    var eventHandler:RegisterViewInterface?
+    
     //MARK: LifeCycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    
-    class func classString() -> String {
-        return NSStringFromClass(self)
-    }
-    
+        
     //MARK:ActionMethods
     @IBAction func registerButtonTapped(sender: AnyObject) {
         

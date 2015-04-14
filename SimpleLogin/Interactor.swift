@@ -11,7 +11,11 @@ import UIKit
 
 class Interactor {
     
-    var presenter:Presenter!
+    var presenter:Presenter?
+    
+    init(){
+        
+    }
     
     func loginWithUser(userName:String,password:String){
         
