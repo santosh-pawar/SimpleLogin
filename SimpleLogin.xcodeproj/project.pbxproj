@@ -8,11 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		AA1160061ADCAB2300422271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1160051ADCAB2300422271 /* AppDelegate.swift */; };
-		AA1160081ADCAB2300422271 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1160071ADCAB2300422271 /* ViewController.swift */; };
 		AA11600B1ADCAB2300422271 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1160091ADCAB2300422271 /* Main.storyboard */; };
 		AA11600D1ADCAB2300422271 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA11600C1ADCAB2300422271 /* Images.xcassets */; };
 		AA1160101ADCAB2300422271 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA11600E1ADCAB2300422271 /* LaunchScreen.xib */; };
 		AA11601C1ADCAB2300422271 /* SimpleLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11601B1ADCAB2300422271 /* SimpleLoginTests.swift */; };
+		AA1160261ADCAC8F00422271 /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1160251ADCAC8F00422271 /* Routing.swift */; };
+		AA1160281ADCB2CC00422271 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1160271ADCB2CC00422271 /* Interactor.swift */; };
+		AA11602A1ADCB2DF00422271 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1160291ADCB2DF00422271 /* Presenter.swift */; };
+		AA11602C1ADCB2F400422271 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11602B1ADCB2F400422271 /* Entity.swift */; };
+		AA11602E1ADCB30A00422271 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11602D1ADCB30A00422271 /* LoginView.swift */; };
+		AA1160301ADCB32200422271 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11602F1ADCB32200422271 /* RegisterView.swift */; };
+		AA1160321ADCB35A00422271 /* ProtectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1160311ADCB35A00422271 /* ProtectedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +35,19 @@
 		AA1160001ADCAB2300422271 /* SimpleLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA1160041ADCAB2300422271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA1160051ADCAB2300422271 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA1160071ADCAB2300422271 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AA11600A1ADCAB2300422271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA11600C1ADCAB2300422271 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AA11600F1ADCAB2300422271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		AA1160151ADCAB2300422271 /* SimpleLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA11601A1ADCAB2300422271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA11601B1ADCAB2300422271 /* SimpleLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLoginTests.swift; sourceTree = "<group>"; };
+		AA1160251ADCAC8F00422271 /* Routing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
+		AA1160271ADCB2CC00422271 /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		AA1160291ADCB2DF00422271 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		AA11602B1ADCB2F400422271 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		AA11602D1ADCB30A00422271 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AA11602F1ADCB32200422271 /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		AA1160311ADCB35A00422271 /* ProtectedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtectedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +90,13 @@
 			isa = PBXGroup;
 			children = (
 				AA1160051ADCAB2300422271 /* AppDelegate.swift */,
-				AA1160071ADCAB2300422271 /* ViewController.swift */,
+				AA1160311ADCB35A00422271 /* ProtectedView.swift */,
+				AA11602D1ADCB30A00422271 /* LoginView.swift */,
+				AA11602F1ADCB32200422271 /* RegisterView.swift */,
+				AA1160271ADCB2CC00422271 /* Interactor.swift */,
+				AA1160291ADCB2DF00422271 /* Presenter.swift */,
+				AA11602B1ADCB2F400422271 /* Entity.swift */,
+				AA1160251ADCAC8F00422271 /* Routing.swift */,
 				AA1160091ADCAB2300422271 /* Main.storyboard */,
 				AA11600C1ADCAB2300422271 /* Images.xcassets */,
 				AA11600E1ADCAB2300422271 /* LaunchScreen.xib */,
@@ -212,8 +230,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA1160081ADCAB2300422271 /* ViewController.swift in Sources */,
+				AA11602E1ADCB30A00422271 /* LoginView.swift in Sources */,
 				AA1160061ADCAB2300422271 /* AppDelegate.swift in Sources */,
+				AA11602C1ADCB2F400422271 /* Entity.swift in Sources */,
+				AA1160321ADCB35A00422271 /* ProtectedView.swift in Sources */,
+				AA1160281ADCB2CC00422271 /* Interactor.swift in Sources */,
+				AA1160301ADCB32200422271 /* RegisterView.swift in Sources */,
+				AA1160261ADCAC8F00422271 /* Routing.swift in Sources */,
+				AA11602A1ADCB2DF00422271 /* Presenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
