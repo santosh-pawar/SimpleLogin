@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA1160061ADCAB2300422271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1160051ADCAB2300422271 /* AppDelegate.swift */; };
+		AA1160081ADCAB2300422271 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1160071ADCAB2300422271 /* ViewController.swift */; };
+		AA11600B1ADCAB2300422271 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1160091ADCAB2300422271 /* Main.storyboard */; };
+		AA11600D1ADCAB2300422271 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA11600C1ADCAB2300422271 /* Images.xcassets */; };
+		AA1160101ADCAB2300422271 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA11600E1ADCAB2300422271 /* LaunchScreen.xib */; };
+		AA11601C1ADCAB2300422271 /* SimpleLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11601B1ADCAB2300422271 /* SimpleLoginTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA1160161ADCAB2300422271 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA115FF81ADCAB2300422271 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA115FFF1ADCAB2300422271;
+			remoteInfo = SimpleLogin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA1160001ADCAB2300422271 /* SimpleLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA1160041ADCAB2300422271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA1160051ADCAB2300422271 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA1160071ADCAB2300422271 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AA11600A1ADCAB2300422271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA11600C1ADCAB2300422271 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AA11600F1ADCAB2300422271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AA1160151ADCAB2300422271 /* SimpleLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA11601A1ADCAB2300422271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA11601B1ADCAB2300422271 /* SimpleLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLoginTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA115FFD1ADCAB2300422271 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA1160121ADCAB2300422271 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA115FF71ADCAB2300422271 = {
+			isa = PBXGroup;
+			children = (
+				AA1160021ADCAB2300422271 /* SimpleLogin */,
+				AA1160181ADCAB2300422271 /* SimpleLoginTests */,
+				AA1160011ADCAB2300422271 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA1160011ADCAB2300422271 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA1160001ADCAB2300422271 /* SimpleLogin.app */,
+				AA1160151ADCAB2300422271 /* SimpleLoginTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA1160021ADCAB2300422271 /* SimpleLogin */ = {
+			isa = PBXGroup;
+			children = (
+				AA1160051ADCAB2300422271 /* AppDelegate.swift */,
+				AA1160071ADCAB2300422271 /* ViewController.swift */,
+				AA1160091ADCAB2300422271 /* Main.storyboard */,
+				AA11600C1ADCAB2300422271 /* Images.xcassets */,
+				AA11600E1ADCAB2300422271 /* LaunchScreen.xib */,
+				AA1160031ADCAB2300422271 /* Supporting Files */,
+			);
+			path = SimpleLogin;
+			sourceTree = "<group>";
+		};
+		AA1160031ADCAB2300422271 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA1160041ADCAB2300422271 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA1160181ADCAB2300422271 /* SimpleLoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA11601B1ADCAB2300422271 /* SimpleLoginTests.swift */,
+				AA1160191ADCAB2300422271 /* Supporting Files */,
+			);
+			path = SimpleLoginTests;
+			sourceTree = "<group>";
+		};
+		AA1160191ADCAB2300422271 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA11601A1ADCAB2300422271 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA115FFF1ADCAB2300422271 /* SimpleLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA11601F1ADCAB2300422271 /* Build configuration list for PBXNativeTarget "SimpleLogin" */;
+			buildPhases = (
+				AA115FFC1ADCAB2300422271 /* Sources */,
+				AA115FFD1ADCAB2300422271 /* Frameworks */,
+				AA115FFE1ADCAB2300422271 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleLogin;
+			productName = SimpleLogin;
+			productReference = AA1160001ADCAB2300422271 /* SimpleLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA1160141ADCAB2300422271 /* SimpleLoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA1160221ADCAB2300422271 /* Build configuration list for PBXNativeTarget "SimpleLoginTests" */;
+			buildPhases = (
+				AA1160111ADCAB2300422271 /* Sources */,
+				AA1160121ADCAB2300422271 /* Frameworks */,
+				AA1160131ADCAB2300422271 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA1160171ADCAB2300422271 /* PBXTargetDependency */,
+			);
+			name = SimpleLoginTests;
+			productName = SimpleLoginTests;
+			productReference = AA1160151ADCAB2300422271 /* SimpleLoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA115FF81ADCAB2300422271 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Santosh;
+				TargetAttributes = {
+					AA115FFF1ADCAB2300422271 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					AA1160141ADCAB2300422271 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = AA115FFF1ADCAB2300422271;
+					};
+				};
+			};
+			buildConfigurationList = AA115FFB1ADCAB2300422271 /* Build configuration list for PBXProject "SimpleLogin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA115FF71ADCAB2300422271;
+			productRefGroup = AA1160011ADCAB2300422271 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA115FFF1ADCAB2300422271 /* SimpleLogin */,
+				AA1160141ADCAB2300422271 /* SimpleLoginTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA115FFE1ADCAB2300422271 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA11600B1ADCAB2300422271 /* Main.storyboard in Resources */,
+				AA1160101ADCAB2300422271 /* LaunchScreen.xib in Resources */,
+				AA11600D1ADCAB2300422271 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA1160131ADCAB2300422271 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA115FFC1ADCAB2300422271 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA1160081ADCAB2300422271 /* ViewController.swift in Sources */,
+				AA1160061ADCAB2300422271 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA1160111ADCAB2300422271 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA11601C1ADCAB2300422271 /* SimpleLoginTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA1160171ADCAB2300422271 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA115FFF1ADCAB2300422271 /* SimpleLogin */;
+			targetProxy = AA1160161ADCAB2300422271 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA1160091ADCAB2300422271 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA11600A1ADCAB2300422271 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA11600E1ADCAB2300422271 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA11600F1ADCAB2300422271 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA11601D1ADCAB2300422271 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA11601E1ADCAB2300422271 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA1160201ADCAB2300422271 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SimpleLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AA1160211ADCAB2300422271 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SimpleLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AA1160231ADCAB2300422271 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SimpleLoginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleLogin.app/SimpleLogin";
+			};
+			name = Debug;
+		};
+		AA1160241ADCAB2300422271 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SimpleLoginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleLogin.app/SimpleLogin";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA115FFB1ADCAB2300422271 /* Build configuration list for PBXProject "SimpleLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA11601D1ADCAB2300422271 /* Debug */,
+				AA11601E1ADCAB2300422271 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA11601F1ADCAB2300422271 /* Build configuration list for PBXNativeTarget "SimpleLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA1160201ADCAB2300422271 /* Debug */,
+				AA1160211ADCAB2300422271 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AA1160221ADCAB2300422271 /* Build configuration list for PBXNativeTarget "SimpleLoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA1160231ADCAB2300422271 /* Debug */,
+				AA1160241ADCAB2300422271 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA115FF81ADCAB2300422271 /* Project object */;
+}
