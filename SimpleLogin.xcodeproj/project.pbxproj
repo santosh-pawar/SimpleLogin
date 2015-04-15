@@ -13,6 +13,9 @@
 		2C20EBBC1ADDA86800C2C7D6 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C20EBBB1ADDA86800C2C7D6 /* RegisterPresenter.swift */; };
 		2C20EBBE1ADDB3ED00C2C7D6 /* LoginModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C20EBBD1ADDB3ED00C2C7D6 /* LoginModuleInterface.swift */; };
 		2C20EBC01ADDB98D00C2C7D6 /* RegisterViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C20EBBF1ADDB98D00C2C7D6 /* RegisterViewInterface.swift */; };
+		2C902A861ADF0C4E0095D189 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C902A851ADF0C4E0095D189 /* LoginInteractor.swift */; };
+		2C902A881ADF0C770095D189 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C902A871ADF0C770095D189 /* LoginPresenter.swift */; };
+		2C902A8A1ADF0CFB0095D189 /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C902A891ADF0CFB0095D189 /* MainWireframe.swift */; };
 		2CCD1FD21ADEEBC3000069EB /* ProtectedViewWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCD1FD11ADEEBC3000069EB /* ProtectedViewWireframe.swift */; };
 		2CCD1FD41ADEEBCD000069EB /* ProtectedViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCD1FD31ADEEBCD000069EB /* ProtectedViewPresenter.swift */; };
 		2CCD1FD61ADEF3B5000069EB /* ProtectedViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCD1FD51ADEF3B5000069EB /* ProtectedViewInterface.swift */; };
@@ -22,9 +25,6 @@
 		AA11600D1ADCAB2300422271 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA11600C1ADCAB2300422271 /* Images.xcassets */; };
 		AA1160101ADCAB2300422271 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA11600E1ADCAB2300422271 /* LaunchScreen.xib */; };
 		AA11601C1ADCAB2300422271 /* SimpleLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11601B1ADCAB2300422271 /* SimpleLoginTests.swift */; };
-		AA1160261ADCAC8F00422271 /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1160251ADCAC8F00422271 /* Routing.swift */; };
-		AA1160281ADCB2CC00422271 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1160271ADCB2CC00422271 /* Interactor.swift */; };
-		AA11602A1ADCB2DF00422271 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1160291ADCB2DF00422271 /* Presenter.swift */; };
 		AA11602C1ADCB2F400422271 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11602B1ADCB2F400422271 /* Entity.swift */; };
 		AA11602E1ADCB30A00422271 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11602D1ADCB30A00422271 /* LoginView.swift */; };
 		AA1160301ADCB32200422271 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11602F1ADCB32200422271 /* RegisterView.swift */; };
@@ -48,6 +48,9 @@
 		2C20EBBB1ADDA86800C2C7D6 /* RegisterPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
 		2C20EBBD1ADDB3ED00C2C7D6 /* LoginModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModuleInterface.swift; sourceTree = "<group>"; };
 		2C20EBBF1ADDB98D00C2C7D6 /* RegisterViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewInterface.swift; sourceTree = "<group>"; };
+		2C902A851ADF0C4E0095D189 /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		2C902A871ADF0C770095D189 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		2C902A891ADF0CFB0095D189 /* MainWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWireframe.swift; sourceTree = "<group>"; };
 		2CCD1FD11ADEEBC3000069EB /* ProtectedViewWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtectedViewWireframe.swift; sourceTree = "<group>"; };
 		2CCD1FD31ADEEBCD000069EB /* ProtectedViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtectedViewPresenter.swift; sourceTree = "<group>"; };
 		2CCD1FD51ADEF3B5000069EB /* ProtectedViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtectedViewInterface.swift; sourceTree = "<group>"; };
@@ -61,9 +64,6 @@
 		AA1160151ADCAB2300422271 /* SimpleLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA11601A1ADCAB2300422271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA11601B1ADCAB2300422271 /* SimpleLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLoginTests.swift; sourceTree = "<group>"; };
-		AA1160251ADCAC8F00422271 /* Routing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
-		AA1160271ADCB2CC00422271 /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
-		AA1160291ADCB2DF00422271 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		AA11602B1ADCB2F400422271 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		AA11602D1ADCB30A00422271 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AA11602F1ADCB32200422271 /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
@@ -114,8 +114,8 @@
 				2C20EBBD1ADDB3ED00C2C7D6 /* LoginModuleInterface.swift */,
 				2C20EBB71ADDA78300C2C7D6 /* LoginWireframe.swift */,
 				AA11602D1ADCB30A00422271 /* LoginView.swift */,
-				AA1160271ADCB2CC00422271 /* Interactor.swift */,
-				AA1160291ADCB2DF00422271 /* Presenter.swift */,
+				2C902A851ADF0C4E0095D189 /* LoginInteractor.swift */,
+				2C902A871ADF0C770095D189 /* LoginPresenter.swift */,
 				2C20EBB91ADDA80800C2C7D6 /* RegisterWireframe.swift */,
 				2C20EBBB1ADDA86800C2C7D6 /* RegisterPresenter.swift */,
 				AA08B2751ADE0945004C1D96 /* RegisterInteractor.swift */,
@@ -126,7 +126,7 @@
 				2CCD1FD31ADEEBCD000069EB /* ProtectedViewPresenter.swift */,
 				2CCD1FD11ADEEBC3000069EB /* ProtectedViewWireframe.swift */,
 				AA11602B1ADCB2F400422271 /* Entity.swift */,
-				AA1160251ADCAC8F00422271 /* Routing.swift */,
+				2C902A891ADF0CFB0095D189 /* MainWireframe.swift */,
 				AA1160091ADCAB2300422271 /* Main.storyboard */,
 				AA11600C1ADCAB2300422271 /* Images.xcassets */,
 				AA11600E1ADCAB2300422271 /* LaunchScreen.xib */,
@@ -261,23 +261,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA11602E1ADCB30A00422271 /* LoginView.swift in Sources */,
+				2C902A861ADF0C4E0095D189 /* LoginInteractor.swift in Sources */,
 				AA1160061ADCAB2300422271 /* AppDelegate.swift in Sources */,
 				AA11602C1ADCB2F400422271 /* Entity.swift in Sources */,
+				2C902A881ADF0C770095D189 /* LoginPresenter.swift in Sources */,
 				2CCD1FD41ADEEBCD000069EB /* ProtectedViewPresenter.swift in Sources */,
 				2C20EBBE1ADDB3ED00C2C7D6 /* LoginModuleInterface.swift in Sources */,
 				2C20EBBA1ADDA80800C2C7D6 /* RegisterWireframe.swift in Sources */,
 				2C20EBC01ADDB98D00C2C7D6 /* RegisterViewInterface.swift in Sources */,
 				AA08B2761ADE0945004C1D96 /* RegisterInteractor.swift in Sources */,
 				AA1160321ADCB35A00422271 /* ProtectedView.swift in Sources */,
-				AA1160281ADCB2CC00422271 /* Interactor.swift in Sources */,
 				AA1160301ADCB32200422271 /* RegisterView.swift in Sources */,
 				2C20EBBC1ADDA86800C2C7D6 /* RegisterPresenter.swift in Sources */,
 				2C20EBB61ADDA6C800C2C7D6 /* AppDependencies.swift in Sources */,
-				AA1160261ADCAC8F00422271 /* Routing.swift in Sources */,
+				2C902A8A1ADF0CFB0095D189 /* MainWireframe.swift in Sources */,
 				2C20EBB81ADDA78300C2C7D6 /* LoginWireframe.swift in Sources */,
 				2CCD1FD61ADEF3B5000069EB /* ProtectedViewInterface.swift in Sources */,
 				2CCD1FD21ADEEBC3000069EB /* ProtectedViewWireframe.swift in Sources */,
-				AA11602A1ADCB2DF00422271 /* Presenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

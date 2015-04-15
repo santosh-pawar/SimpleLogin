@@ -10,7 +10,6 @@ import Foundation
 
 class Entity {
     
-//    var registerInteractor:RegisterInteractor?
     var loginInteractor:LoginInteractor?
     
     init(){

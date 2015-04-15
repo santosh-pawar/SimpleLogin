@@ -8,8 +8,10 @@
 
 import Foundation
 
-protocol RegisterViewInterface{
+protocol RegisterViewInterface {
+    
     func showAlertMessage(message:String, withTitle:String)
     func registerWithUserAndPassword(user:String,password:String,retypePassword:String)
     func login()
+    
 }

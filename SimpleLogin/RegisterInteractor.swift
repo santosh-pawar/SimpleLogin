@@ -10,7 +10,6 @@ import Foundation
 
 class RegisterInteractor {
     
-    var registerPresenter:RegisterPresenter?
     var entity:Entity?
     
     init(){

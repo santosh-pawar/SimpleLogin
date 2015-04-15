@@ -8,8 +8,10 @@
 
 import Foundation
 
-protocol LoginModuleInterface{
+protocol LoginModuleInterface {
+    
     func loginWithUser(name:String, password:String)
     func registerNewUser()
     func showAlertMessage(message:String, withTitle:String)
+    
 }

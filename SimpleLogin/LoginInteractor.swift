@@ -1,8 +1,8 @@
 //
-//  Interactor.swift
+//  LoginInteractor.swift
 //  SimpleLogin
 //
-//  Created by Santosh Pawar on 4/13/15.
+//  Created by Pawar, Santosh-CW on 4/15/15.
 //  Copyright (c) 2015 Santosh. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import Foundation
 
 class LoginInteractor {
     
-    var presenter:Presenter?
+    var presenter:LoginPresenter?
     var entity:Entity?
     
     var loggedInUserName = ""

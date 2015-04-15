@@ -1,25 +1,21 @@
 //
-//  Presenter.swift
+//  LoginPresenter.swift
 //  SimpleLogin
 //
-//  Created by Santosh Pawar on 4/13/15.
+//  Created by Pawar, Santosh-CW on 4/15/15.
 //  Copyright (c) 2015 Santosh. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-class Presenter: NSObject, LoginModuleInterface {
+class LoginPresenter: NSObject, LoginModuleInterface {
     
-    var loginView:LoginView?
-    var registerView:RegisterView?
-    var protectedView:ProtectedView?
-    var interactor:LoginInteractor?
-    var routing : Routing?
+    var loginInteractor:LoginInteractor?
     var loginWireframe : LoginWireframe?
     
     //MARK: Login Methods
-
+    
     func userNotFound(){
         self.showAlertMessage("Could not find this user. Please login with registerd User Name", withTitle: "User Not Registered!")
         loginWireframe?.clearTextFields()
@@ -34,7 +30,7 @@ class Presenter: NSObject, LoginModuleInterface {
             self.showAlertMessage("All fields are required!", withTitle: "Alert!!!")
         }
         else{
-            interactor?.loginWithUser(name, password: password)
+            loginInteractor?.loginWithUser(name, password: password)
         }
     }
     
@@ -62,5 +58,4 @@ class Presenter: NSObject, LoginModuleInterface {
     func dismissOkAlert(alertController:UIAlertController){
         self.loginWireframe?.dismissAlert(alertController)
     }
-    
 }

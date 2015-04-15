@@ -12,7 +12,7 @@ import UIKit
 class ProtectedViewPresenter:ProtectedViewInterface {
     
     var protectedViewWireframe:ProtectedViewWireframe?
-    var loginPresenter:Presenter?
+    var loginPresenter:LoginPresenter?
     
     init(){
         

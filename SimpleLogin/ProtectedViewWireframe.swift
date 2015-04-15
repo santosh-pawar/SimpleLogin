@@ -25,7 +25,6 @@ class ProtectedViewWireframe {
         let protectedViewC = protectedViewController()
         protectedViewC.eventHandler = protectedViewPresenter
         protectedViewC.modalPresentationStyle = .Custom
-//        protectedViewC.transitioningDelegate = self
         protectedView = protectedViewC
         
         viewController.presentViewController(protectedViewC, animated: true, completion: nil)

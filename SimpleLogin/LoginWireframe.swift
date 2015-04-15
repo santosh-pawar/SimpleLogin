@@ -14,13 +14,11 @@ let LoginViewControllerIdentifier = "LoginViewController"
 class LoginWireframe: NSObject {
     
     var registerWireframe : RegisterWireframe?
-    var protectedViewWireframe:ProtectedViewWireframe?
     var protectedViewPresenter:ProtectedViewPresenter?
     
-    var presenter: Presenter?
-    var routing : Routing?
+    var loginPresenter: LoginPresenter?
+    var mainWireframe : MainWireframe?
     var loginView : LoginView?
-    var registerView:RegisterView?
     var presentedViewController : UIViewController?
 
     func presentAlertController(alertController:UIViewController){
@@ -33,14 +31,14 @@ class LoginWireframe: NSObject {
     
     func presentLoginViewFromWindow(window: UIWindow){
         let viewController = loginViewControllerFromStoryboard()
-        viewController.eventHandler = presenter
+        viewController.eventHandler = loginPresenter
         loginView = viewController
-        routing?.showRootViewController(viewController, inWindow: window)
+        mainWireframe?.showRootViewController(viewController, inWindow: window)
     }
     
     func presentLoginViewFromViewController(viewController:UIViewController){
         let loginViewC = loginViewControllerFromStoryboard()
-        loginViewC.eventHandler = presenter
+        loginViewC.eventHandler = loginPresenter
         loginViewC.modalPresentationStyle = .OverFullScreen
 
         viewController.presentViewController(loginViewC, animated: true, completion: nil)
