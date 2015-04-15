@@ -22,9 +22,6 @@ class LoginView: UIViewController {
         super.viewDidLoad()
     }
     
-//    class func classString() -> String {
-//        return NSStringFromClass(self)
-//    }
     
     //MARK:ActionMethods
     @IBAction func loginButtonTapped(sender: AnyObject) {

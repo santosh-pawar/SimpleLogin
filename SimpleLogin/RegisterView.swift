@@ -26,10 +26,10 @@ class RegisterView: UIViewController {
         
     //MARK:ActionMethods
     @IBAction func registerButtonTapped(sender: AnyObject) {
-        
+        eventHandler?.registerWithUserAndPassword(emailTextField.text, password: passwordTextField.text, retypePassword: reTypePasswordTextField.text)
     }
     
     @IBAction func alreadyHaveAccountButtonTapped(sender: AnyObject) {
-        
+        eventHandler?.login()
     }
 }

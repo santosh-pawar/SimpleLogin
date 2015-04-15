@@ -10,5 +10,6 @@ import Foundation
 
 protocol RegisterViewInterface{
     func showAlertMessage(message:String)
-    func register()
+    func registerWithUserAndPassword(user:String,password:String,retypePassword:String)
+    func login()
 }

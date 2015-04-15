@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SimpleLogin/Presenter.swift"
-            timestampString = "450676652.965545"
+            filePath = "SimpleLogin/RegisterWireframe.swift"
+            timestampString = "450759641.008355"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "didUserTapRegister()"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "presentRegisterInterfaceFromViewController(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,45 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SimpleLogin/Routing.swift"
-            timestampString = "450676690.580437"
+            filePath = "SimpleLogin/LoginWireframe.swift"
+            timestampString = "450758835.686206"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "init()"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "presentRegisterInterface()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleLogin/RegisterWireframe.swift"
+            timestampString = "450759641.008355"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "presentLoginInterface()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleLogin/LoginWireframe.swift"
+            timestampString = "450758576.68966"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "presentLoginViewFromViewController(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

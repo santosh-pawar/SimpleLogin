@@ -14,14 +14,9 @@ class Presenter: NSObject, LoginModuleInterface {
     var loginView:LoginView?
     var registerView:RegisterView?
     var protectedView:ProtectedView?
-    var interactor:Interactor?
+    var interactor:LoginInteractor?
     var routing : Routing?
     var loginWireframe : LoginWireframe?
-    
-    
-//    init(){
-//        loginView = LoginView()
-//    }
     
     func didUserRequestLoinWithUser(userName:String,password:String){
         interactor!.loginWithUser(userName, password: password)

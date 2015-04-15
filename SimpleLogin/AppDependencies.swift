@@ -24,16 +24,18 @@ class AppDependencies {
         
         let registerWireframe = RegisterWireframe()
         let registerPresenter = RegisterPresenter()
-        
+        let registerInteractor = RegisterInteractor()
         
         presenter.loginWireframe = loginWireframe
         loginWireframe.registerWireframe = registerWireframe
         loginWireframe.presenter = presenter
         loginWireframe.routing = routing
         
-        registerWireframe.registerPresenter = registerPresenter
         registerPresenter.registerWireframe = registerWireframe
-        
+        registerWireframe.loginWireframe = loginWireframe
+        registerWireframe.registerPresenter = registerPresenter
+        registerPresenter.registerInteractor = registerInteractor
+        registerInteractor.registerPresenter = registerPresenter
     }
     
     

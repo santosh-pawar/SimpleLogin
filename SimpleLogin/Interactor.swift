@@ -7,9 +7,8 @@
 //
 
 import Foundation
-import UIKit
 
-class Interactor {
+class LoginInteractor {
     
     var presenter:Presenter?
     
