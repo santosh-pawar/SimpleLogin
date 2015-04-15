@@ -9,5 +9,13 @@
 import Foundation
 
 class Entity {
-    //
+    
+    var registerInteractor:RegisterInteractor?
+    
+    func storeUserDetails(user:String, password:String, completionHandler:(success:Bool) -> Void){
+        NSUserDefaults.standardUserDefaults().setObject(user, forKey: "userEmail")
+        NSUserDefaults.standardUserDefaults().setObject(password, forKey: "userPassword")
+        NSUserDefaults.standardUserDefaults().synchronize()
+        completionHandler(success:true)
+    }
 }

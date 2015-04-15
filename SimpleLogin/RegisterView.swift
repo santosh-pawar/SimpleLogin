@@ -13,9 +13,7 @@ class RegisterView: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var reTypePasswordTextField: UITextField!
-    
-    var presenter:Presenter?
-    
+        
     var eventHandler:RegisterViewInterface?
     
     //MARK: LifeCycle Methods
@@ -23,7 +21,7 @@ class RegisterView: UIViewController {
         super.viewDidLoad()
     }
     
-        
+    
     //MARK:ActionMethods
     @IBAction func registerButtonTapped(sender: AnyObject) {
         eventHandler?.registerWithUserAndPassword(emailTextField.text, password: passwordTextField.text, retypePassword: reTypePasswordTextField.text)
@@ -31,5 +29,11 @@ class RegisterView: UIViewController {
     
     @IBAction func alreadyHaveAccountButtonTapped(sender: AnyObject) {
         eventHandler?.login()
+    }
+    
+    func clearTextFields(){
+        emailTextField.text = nil
+        passwordTextField.text = nil
+        reTypePasswordTextField.text = nil
     }
 }

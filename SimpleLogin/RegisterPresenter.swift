@@ -14,8 +14,8 @@ class RegisterPresenter: NSObject,RegisterViewInterface {
     var registerWireframe:RegisterWireframe?
     var registerInteractor:RegisterInteractor?
     
-    func showAlertMessage(message:String){
-        var alertController:UIAlertController = UIAlertController(title: "Alert!!!", message: message, preferredStyle: UIAlertControllerStyle.Alert)
+    func showAlertMessage(message:String, withTitle:String){
+        var alertController:UIAlertController = UIAlertController(title: withTitle, message: message, preferredStyle: UIAlertControllerStyle.Alert)
         
         var okAction:UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) { (action) -> Void in
             self.registerWireframe?.dismissAlert(alertController)
@@ -26,7 +26,23 @@ class RegisterPresenter: NSObject,RegisterViewInterface {
     }
     
     func registerWithUserAndPassword(user:String,password:String,retypePassword:String){
-        registerInteractor?.registerWithUser(user, password: password, retypePassword: retypePassword)
+        
+        if(user.isEmpty || password.isEmpty || retypePassword.isEmpty){
+            showAlertMessage("All fields are required!", withTitle: "Alert!!!")
+        }
+        else{
+            if(password != retypePassword){
+                showAlertMessage("Re-Type Password did match!", withTitle: "Alert!!!")
+            }
+            else{
+                registerInteractor?.registerWithUser(user, password: password, completionHandler: { (success) -> Void in
+                    if(success){
+                        self.registerWireframe!.clearTextFields()
+                        self.showAlertMessage("Registration Successful.", withTitle: "Success!!!")
+                    }
+                })
+            }
+        }
     }
     
     func login(){

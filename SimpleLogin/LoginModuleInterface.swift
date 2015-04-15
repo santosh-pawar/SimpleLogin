@@ -11,4 +11,5 @@ import Foundation
 protocol LoginModuleInterface{
     func login()
     func registerNewUser()
+    func showAlertMessage(message:String, withTitle:String)
 }

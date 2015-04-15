@@ -30,4 +30,16 @@ class Presenter: NSObject, LoginModuleInterface {
         //
     }
     
+    func showAlertMessage(message:String, withTitle:String){
+        var alertController:UIAlertController = UIAlertController(title: withTitle, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        
+        var okAction:UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) { (action) -> Void in
+            self.loginWireframe?.dismissAlert(alertController)
+        }
+        
+        alertController.addAction(okAction)
+        loginWireframe?.presentAlertController(alertController)
+    }
+
+    
 }

@@ -20,6 +20,14 @@ class LoginWireframe: NSObject {
     var registerView:RegisterView?
     var presentedViewController : UIViewController?
     
+    func presentAlertController(alertController:UIViewController){
+        loginView?.presentViewController(alertController, animated: true, completion: nil)
+    }
+    
+    func dismissAlert(alertController:UIViewController){
+        alertController.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     func presentLoginViewFromWindow(window: UIWindow){
         let viewController = loginViewControllerFromStoryboard()
         viewController.eventHandler = presenter
@@ -32,14 +40,7 @@ class LoginWireframe: NSObject {
         loginViewC.eventHandler = presenter
         loginViewC.modalPresentationStyle = .OverFullScreen
 
-//        loginViewC.transitioningDelegate = self
-        if(presentedViewController == nil){
-            viewController.presentViewController(loginViewC, animated: true, completion: nil)
-        }
-        else{
-//            viewController.dismissViewControllerAnimated(true, completion: nil)
-            viewController.presentViewController(loginViewC, animated: true, completion: nil)
-        }
+        viewController.presentViewController(loginViewC, animated: true, completion: nil)
         presentedViewController = loginViewC
     }
     

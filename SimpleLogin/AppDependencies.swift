@@ -25,6 +25,7 @@ class AppDependencies {
         let registerWireframe = RegisterWireframe()
         let registerPresenter = RegisterPresenter()
         let registerInteractor = RegisterInteractor()
+        let entity = Entity()
         
         presenter.loginWireframe = loginWireframe
         loginWireframe.registerWireframe = registerWireframe
@@ -36,6 +37,8 @@ class AppDependencies {
         registerWireframe.registerPresenter = registerPresenter
         registerPresenter.registerInteractor = registerInteractor
         registerInteractor.registerPresenter = registerPresenter
+        registerInteractor.entity = entity
+        entity.registerInteractor = registerInteractor
     }
     
     

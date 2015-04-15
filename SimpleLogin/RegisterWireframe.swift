@@ -13,10 +13,13 @@ let RegisterViewControllerIdentifier = "RegisterViewController"
 
 class RegisterWireframe: NSObject,UIViewControllerTransitioningDelegate {
     
+    //MARK:Variables
     var registerView : RegisterView?
     var registerPresenter : RegisterPresenter?
     var presentedViewController : UIViewController?
     var loginWireframe:LoginWireframe?
+    
+    //MARK:Functions
     
     func presentAlertController(alertController:UIViewController){
         registerView?.presentViewController(alertController, animated: true, completion: nil)
@@ -32,17 +35,10 @@ class RegisterWireframe: NSObject,UIViewControllerTransitioningDelegate {
         registerViewC.modalPresentationStyle = .Custom
         registerViewC.transitioningDelegate = self
         registerView = registerViewC
-        if(presentedViewController == nil){
-            viewController.presentViewController(registerViewC, animated: true, completion: nil)
-        }
-        else{
-//            viewController.dismissViewControllerAnimated(true, completion: nil)
-            viewController.presentViewController(registerViewC, animated: true, completion: nil)
-        }
-        
+
+        viewController.presentViewController(registerViewC, animated: true, completion: nil)
         presentedViewController = registerViewC
     }
-    
     
     func registerViewController() -> RegisterView{
         let storyboard = mainStoryboard()
@@ -58,5 +54,9 @@ class RegisterWireframe: NSObject,UIViewControllerTransitioningDelegate {
     func presentLoginInterface(){
         registerView?.dismissViewControllerAnimated(true, completion: nil)
         loginWireframe?.presentLoginViewFromViewController(registerView!)
+    }
+    
+    func clearTextFields(){
+        registerView?.clearTextFields()
     }
 }

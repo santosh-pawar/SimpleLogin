@@ -11,12 +11,9 @@ import Foundation
 class RegisterInteractor {
     
     var registerPresenter:RegisterPresenter?
+    var entity:Entity?
     
-    func registerWithUser(user:String,password:String,retypePassword:String){
-        let userName:String = user
-        let userPassword = password
-        let rePassword = retypePassword
-        
-        
-    }
+    func registerWithUser(user:String,password:String, completionHandler:(success:Bool) -> Void) {
+        entity?.storeUserDetails(user, password: password, completionHandler: completionHandler)
+    }    
 }
