@@ -20,17 +20,26 @@ class AppDependencies {
     func configureDependencies(){
         
         let routing = Routing()
-        let presenter = Presenter()
+        let loginPresenter = Presenter()
+        let loginInteractor = LoginInteractor()
         
         let registerWireframe = RegisterWireframe()
         let registerPresenter = RegisterPresenter()
         let registerInteractor = RegisterInteractor()
         let entity = Entity()
         
-        presenter.loginWireframe = loginWireframe
+        let protectedViewWireframe = ProtectedViewWireframe()
+        
+        loginPresenter.loginWireframe = loginWireframe
         loginWireframe.registerWireframe = registerWireframe
-        loginWireframe.presenter = presenter
+        loginWireframe.presenter = loginPresenter
         loginWireframe.routing = routing
+        loginPresenter.interactor = loginInteractor
+        entity.loginInteractor = loginInteractor
+        loginInteractor.entity = entity
+        loginInteractor.presenter = loginPresenter
+        loginWireframe.protectedViewWireframe = protectedViewWireframe
+        
         
         registerPresenter.registerWireframe = registerWireframe
         registerWireframe.loginWireframe = loginWireframe
@@ -38,7 +47,7 @@ class AppDependencies {
         registerPresenter.registerInteractor = registerInteractor
         registerInteractor.registerPresenter = registerPresenter
         registerInteractor.entity = entity
-        entity.registerInteractor = registerInteractor
+//        entity.registerInteractor = registerInteractor
     }
     
     

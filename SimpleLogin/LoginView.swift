@@ -25,10 +25,15 @@ class LoginView: UIViewController {
     
     //MARK:ActionMethods
     @IBAction func loginButtonTapped(sender: AnyObject) {
-        presenter!.didUserRequestLoinWithUser(emailTextField.text, password: passwordTextField.text)
+        eventHandler?.loginWithUser(emailTextField.text, password: passwordTextField.text)
     }
     
     @IBAction func registerButtonTapped(sender: AnyObject) {
         eventHandler?.registerNewUser()
+    }
+    
+    func clearTextFields(){
+        emailTextField.text = nil
+        passwordTextField.text = nil
     }
 }

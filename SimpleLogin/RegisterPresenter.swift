@@ -17,13 +17,18 @@ class RegisterPresenter: NSObject,RegisterViewInterface {
     func showAlertMessage(message:String, withTitle:String){
         var alertController:UIAlertController = UIAlertController(title: withTitle, message: message, preferredStyle: UIAlertControllerStyle.Alert)
         
-        var okAction:UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) { (action) -> Void in
-            self.registerWireframe?.dismissAlert(alertController)
+        var okAction:UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) { (action:UIAlertAction!) -> Void in
+            self.dismissOkAlert(alertController)
         }
         
         alertController.addAction(okAction)
         registerWireframe?.presentAlertController(alertController)
     }
+    
+    func dismissOkAlert(alertController:UIAlertController){
+        self.registerWireframe?.dismissAlert(alertController)
+    }
+    
     
     func registerWithUserAndPassword(user:String,password:String,retypePassword:String){
         

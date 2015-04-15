@@ -14,6 +14,8 @@ let LoginViewControllerIdentifier = "LoginViewController"
 class LoginWireframe: NSObject {
     
     var registerWireframe : RegisterWireframe?
+    var protectedViewWireframe:ProtectedViewWireframe?
+    
     var presenter: Presenter?
     var routing : Routing?
     var loginView : LoginView?
@@ -44,10 +46,9 @@ class LoginWireframe: NSObject {
         presentedViewController = loginViewC
     }
     
-    
     func loginViewControllerFromStoryboard() -> LoginView {
         let storyboard = mainStoryboard()
-        let viewController = storyboard.instantiateViewControllerWithIdentifier(LoginViewControllerIdentifier) as! LoginView
+        let viewController = storyboard.instantiateViewControllerWithIdentifier(LoginViewControllerIdentifier) as LoginView
         return viewController
     }
     
@@ -59,5 +60,15 @@ class LoginWireframe: NSObject {
     func presentRegisterInterface(){
         loginView?.dismissViewControllerAnimated(true, completion: nil)
         registerWireframe?.presentRegisterInterfaceFromViewController(loginView!)
+    }
+    
+    func clearTextFields(){
+        loginView?.clearTextFields()
+    }
+    
+    //MARK: Protected View methods
+    func presentProtectedView(){
+        loginView?.dismissViewControllerAnimated(true, completion: nil)
+        protectedViewWireframe?.presentProtectedViewFromViewController(loginView!)
     }
 }

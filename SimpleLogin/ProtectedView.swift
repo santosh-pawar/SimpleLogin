@@ -10,7 +10,7 @@ import UIKit
 
 class ProtectedView: UIViewController {
 
-    var presenter:Presenter?
+    var protectedViewPresenter:ProtectedViewPresenter?
     
     //MARK: LifeCycle Methods
     override func viewDidLoad() {

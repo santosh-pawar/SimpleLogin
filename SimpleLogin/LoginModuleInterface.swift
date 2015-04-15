@@ -9,7 +9,7 @@
 import Foundation
 
 protocol LoginModuleInterface{
-    func login()
+    func loginWithUser(name:String, password:String)
     func registerNewUser()
     func showAlertMessage(message:String, withTitle:String)
 }

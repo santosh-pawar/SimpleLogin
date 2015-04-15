@@ -42,7 +42,7 @@ class RegisterWireframe: NSObject,UIViewControllerTransitioningDelegate {
     
     func registerViewController() -> RegisterView{
         let storyboard = mainStoryboard()
-        let registerViewController:RegisterView = storyboard.instantiateViewControllerWithIdentifier(RegisterViewControllerIdentifier) as! RegisterView
+        let registerViewController:RegisterView = storyboard.instantiateViewControllerWithIdentifier(RegisterViewControllerIdentifier) as RegisterView
         return registerViewController
     }
     

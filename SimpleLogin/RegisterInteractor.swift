@@ -13,6 +13,10 @@ class RegisterInteractor {
     var registerPresenter:RegisterPresenter?
     var entity:Entity?
     
+    init(){
+        
+    }
+    
     func registerWithUser(user:String,password:String, completionHandler:(success:Bool) -> Void) {
         entity?.storeUserDetails(user, password: password, completionHandler: completionHandler)
     }    

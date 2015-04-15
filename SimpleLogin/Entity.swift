@@ -10,12 +10,29 @@ import Foundation
 
 class Entity {
     
-    var registerInteractor:RegisterInteractor?
+//    var registerInteractor:RegisterInteractor?
+    var loginInteractor:LoginInteractor?
+    
+    init(){
+        
+    }
     
     func storeUserDetails(user:String, password:String, completionHandler:(success:Bool) -> Void){
         NSUserDefaults.standardUserDefaults().setObject(user, forKey: "userEmail")
         NSUserDefaults.standardUserDefaults().setObject(password, forKey: "userPassword")
         NSUserDefaults.standardUserDefaults().synchronize()
         completionHandler(success:true)
+    }
+    
+    func retrieveLoginDetails(){
+        let userName: AnyObject? = NSUserDefaults.standardUserDefaults().valueForKey("userEmail")
+        let userPassword: AnyObject? = NSUserDefaults.standardUserDefaults().valueForKey("userPassword")
+        
+        if(userName == nil){
+            loginInteractor!.userNotFound()
+        }
+        else{
+            loginInteractor!.getLoginDetails(userName!, userPassword: userPassword!)
+        }
     }
 }

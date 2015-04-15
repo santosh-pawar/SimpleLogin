@@ -18,7 +18,7 @@ class Routing {
     }
     
     func navigationControllerFromWindow(window: UIWindow) -> UINavigationController {
-        let navigationController = window.rootViewController as! UINavigationController
+        let navigationController = window.rootViewController as UINavigationController
         return navigationController
     }
 }
