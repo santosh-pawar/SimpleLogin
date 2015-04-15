@@ -7,12 +7,26 @@
 //
 
 import Foundation
+import UIKit
 
-class ProtectedViewPresenter {
+class ProtectedViewPresenter:ProtectedViewInterface {
     
     var protectedViewWireframe:ProtectedViewWireframe?
+    var loginPresenter:Presenter?
     
-    func presentProtectedView(){
+    init(){
         
+    }
+    
+    func presentProtectedViewFromViewController(viewController:UIViewController){
+        protectedViewWireframe?.presentProtectedViewFromViewController(viewController)
+    }
+    
+    func logoutFromApp() {
+        protectedViewWireframe?.logout()
+    }
+    
+    func presentLoginViewFromViewController(viewController:UIViewController){
+        loginPresenter?.loginWireframe?.presentLoginViewFromViewController(viewController)
     }
 }

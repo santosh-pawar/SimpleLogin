@@ -23,7 +23,7 @@ class ProtectedViewWireframe {
     
     func presentProtectedViewFromViewController(viewController:UIViewController){
         let protectedViewC = protectedViewController()
-//        protectedViewC.eventHandler = registerPresenter
+        protectedViewC.eventHandler = protectedViewPresenter
         protectedViewC.modalPresentationStyle = .Custom
 //        protectedViewC.transitioningDelegate = self
         protectedView = protectedViewC
@@ -41,5 +41,9 @@ class ProtectedViewWireframe {
     func mainStoryboard() -> UIStoryboard {
         let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
         return storyboard
+    }
+    
+    func logout(){
+        protectedViewPresenter?.presentLoginViewFromViewController(protectedView!)
     }
 }

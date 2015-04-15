@@ -15,6 +15,7 @@
 		2C20EBC01ADDB98D00C2C7D6 /* RegisterViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C20EBBF1ADDB98D00C2C7D6 /* RegisterViewInterface.swift */; };
 		2CCD1FD21ADEEBC3000069EB /* ProtectedViewWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCD1FD11ADEEBC3000069EB /* ProtectedViewWireframe.swift */; };
 		2CCD1FD41ADEEBCD000069EB /* ProtectedViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCD1FD31ADEEBCD000069EB /* ProtectedViewPresenter.swift */; };
+		2CCD1FD61ADEF3B5000069EB /* ProtectedViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCD1FD51ADEF3B5000069EB /* ProtectedViewInterface.swift */; };
 		AA08B2761ADE0945004C1D96 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA08B2751ADE0945004C1D96 /* RegisterInteractor.swift */; };
 		AA1160061ADCAB2300422271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1160051ADCAB2300422271 /* AppDelegate.swift */; };
 		AA11600B1ADCAB2300422271 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1160091ADCAB2300422271 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		2C20EBBF1ADDB98D00C2C7D6 /* RegisterViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewInterface.swift; sourceTree = "<group>"; };
 		2CCD1FD11ADEEBC3000069EB /* ProtectedViewWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtectedViewWireframe.swift; sourceTree = "<group>"; };
 		2CCD1FD31ADEEBCD000069EB /* ProtectedViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtectedViewPresenter.swift; sourceTree = "<group>"; };
+		2CCD1FD51ADEF3B5000069EB /* ProtectedViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtectedViewInterface.swift; sourceTree = "<group>"; };
 		AA08B2751ADE0945004C1D96 /* RegisterInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
 		AA1160001ADCAB2300422271 /* SimpleLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA1160041ADCAB2300422271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				AA08B2751ADE0945004C1D96 /* RegisterInteractor.swift */,
 				2C20EBBF1ADDB98D00C2C7D6 /* RegisterViewInterface.swift */,
 				AA11602F1ADCB32200422271 /* RegisterView.swift */,
+				2CCD1FD51ADEF3B5000069EB /* ProtectedViewInterface.swift */,
 				AA1160311ADCB35A00422271 /* ProtectedView.swift */,
 				2CCD1FD31ADEEBCD000069EB /* ProtectedViewPresenter.swift */,
 				2CCD1FD11ADEEBC3000069EB /* ProtectedViewWireframe.swift */,
@@ -272,6 +275,7 @@
 				2C20EBB61ADDA6C800C2C7D6 /* AppDependencies.swift in Sources */,
 				AA1160261ADCAC8F00422271 /* Routing.swift in Sources */,
 				2C20EBB81ADDA78300C2C7D6 /* LoginWireframe.swift in Sources */,
+				2CCD1FD61ADEF3B5000069EB /* ProtectedViewInterface.swift in Sources */,
 				2CCD1FD21ADEEBC3000069EB /* ProtectedViewWireframe.swift in Sources */,
 				AA11602A1ADCB2DF00422271 /* Presenter.swift in Sources */,
 			);

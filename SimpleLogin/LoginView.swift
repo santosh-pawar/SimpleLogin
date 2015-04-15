@@ -12,9 +12,7 @@ class LoginView: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
-    var presenter:Presenter?
-    
+        
     var eventHandler:LoginModuleInterface?
     
     //MARK: LifeCycle Methods
@@ -29,6 +27,8 @@ class LoginView: UIViewController {
     }
     
     @IBAction func registerButtonTapped(sender: AnyObject) {
+        emailTextField.text = nil
+        passwordTextField.text = nil
         eventHandler?.registerNewUser()
     }
     

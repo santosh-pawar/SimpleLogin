@@ -15,13 +15,14 @@ class LoginWireframe: NSObject {
     
     var registerWireframe : RegisterWireframe?
     var protectedViewWireframe:ProtectedViewWireframe?
+    var protectedViewPresenter:ProtectedViewPresenter?
     
     var presenter: Presenter?
     var routing : Routing?
     var loginView : LoginView?
     var registerView:RegisterView?
     var presentedViewController : UIViewController?
-    
+
     func presentAlertController(alertController:UIViewController){
         loginView?.presentViewController(alertController, animated: true, completion: nil)
     }
@@ -69,6 +70,6 @@ class LoginWireframe: NSObject {
     //MARK: Protected View methods
     func presentProtectedView(){
         loginView?.dismissViewControllerAnimated(true, completion: nil)
-        protectedViewWireframe?.presentProtectedViewFromViewController(loginView!)
+        protectedViewPresenter?.presentProtectedViewFromViewController(loginView!)
     }
 }

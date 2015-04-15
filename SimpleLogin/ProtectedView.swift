@@ -10,7 +10,7 @@ import UIKit
 
 class ProtectedView: UIViewController {
 
-    var protectedViewPresenter:ProtectedViewPresenter?
+    var eventHandler:ProtectedViewInterface?
     
     //MARK: LifeCycle Methods
     override func viewDidLoad() {
@@ -21,6 +21,6 @@ class ProtectedView: UIViewController {
     //MARK:ActionMethods
     
     @IBAction func logoutButtonTapped(sender: AnyObject) {
-//        presenter!.didUserTapRegister()
+        eventHandler!.logoutFromApp()
     }
 }

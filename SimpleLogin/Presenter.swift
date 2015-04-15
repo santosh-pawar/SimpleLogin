@@ -19,10 +19,7 @@ class Presenter: NSObject, LoginModuleInterface {
     var loginWireframe : LoginWireframe?
     
     //MARK: Login Methods
-    func didUserRequestLoinWithUser(userName:String,password:String){
-        interactor!.loginWithUser(userName, password: password)
-    }
-    
+
     func userNotFound(){
         self.showAlertMessage("Could not find this user. Please login with registerd User Name", withTitle: "User Not Registered!")
         loginWireframe?.clearTextFields()

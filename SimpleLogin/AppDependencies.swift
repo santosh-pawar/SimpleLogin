@@ -26,9 +26,11 @@ class AppDependencies {
         let registerWireframe = RegisterWireframe()
         let registerPresenter = RegisterPresenter()
         let registerInteractor = RegisterInteractor()
+        
         let entity = Entity()
         
         let protectedViewWireframe = ProtectedViewWireframe()
+        let protectedViewPresenter = ProtectedViewPresenter()
         
         loginPresenter.loginWireframe = loginWireframe
         loginWireframe.registerWireframe = registerWireframe
@@ -38,8 +40,12 @@ class AppDependencies {
         entity.loginInteractor = loginInteractor
         loginInteractor.entity = entity
         loginInteractor.presenter = loginPresenter
-        loginWireframe.protectedViewWireframe = protectedViewWireframe
         
+        loginWireframe.protectedViewWireframe = protectedViewWireframe
+        loginWireframe.protectedViewPresenter = protectedViewPresenter
+        protectedViewPresenter.protectedViewWireframe = protectedViewWireframe
+        protectedViewWireframe.protectedViewPresenter = protectedViewPresenter
+        protectedViewPresenter.loginPresenter = loginPresenter
         
         registerPresenter.registerWireframe = registerWireframe
         registerWireframe.loginWireframe = loginWireframe
@@ -47,7 +53,7 @@ class AppDependencies {
         registerPresenter.registerInteractor = registerInteractor
         registerInteractor.registerPresenter = registerPresenter
         registerInteractor.entity = entity
-//        entity.registerInteractor = registerInteractor
+
     }
     
     
