@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginView: UIViewController {
+class LoginView: UIViewController,UITextFieldDelegate {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -21,9 +21,9 @@ class LoginView: UIViewController {
     }
     
     
-    //MARK:ActionMethods
+    //MARK:Action Methods
     @IBAction func loginButtonTapped(sender: AnyObject) {
-        eventHandler?.loginWithUser(emailTextField.text, password: passwordTextField.text)
+        self.login()
     }
     
     @IBAction func registerButtonTapped(sender: AnyObject) {
@@ -32,8 +32,24 @@ class LoginView: UIViewController {
         eventHandler?.registerNewUser()
     }
     
+    func login()
+    {
+        eventHandler?.loginWithUser(emailTextField.text, password: passwordTextField.text)
+    }
+    
     func clearTextFields(){
         emailTextField.text = nil
         passwordTextField.text = nil
+    }
+    
+    //MARK: Delegate methods
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        self.login()
+        return true
+    }
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        self.view.endEditing(true)
     }
 }

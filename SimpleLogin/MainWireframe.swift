@@ -2,7 +2,7 @@
 //  MainWireframe.swift
 //  SimpleLogin
 //
-//  Created by Pawar, Santosh-CW on 4/15/15.
+//  Created by Santosh Pawar on 4/13/15.
 //  Copyright (c) 2015 Santosh. All rights reserved.
 //
 
@@ -17,7 +17,7 @@ class MainWireframe {
     }
     
     func navigationControllerFromWindow(window: UIWindow) -> UINavigationController {
-        let navigationController = window.rootViewController as UINavigationController
+        let navigationController = window.rootViewController as! UINavigationController
         return navigationController
     }
 }

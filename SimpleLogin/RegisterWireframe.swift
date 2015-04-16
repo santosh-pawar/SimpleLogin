@@ -2,7 +2,7 @@
 //  RegisterWireframe.swift
 //  SimpleLogin
 //
-//  Created by Pawar, Santosh-CW on 4/14/15.
+//  Created by Santosh Pawar on 4/13/15.
 //  Copyright (c) 2015 Santosh. All rights reserved.
 //
 
@@ -42,7 +42,7 @@ class RegisterWireframe: NSObject,UIViewControllerTransitioningDelegate {
     
     func registerViewController() -> RegisterView{
         let storyboard = mainStoryboard()
-        let registerViewController:RegisterView = storyboard.instantiateViewControllerWithIdentifier(RegisterViewControllerIdentifier) as RegisterView
+        let registerViewController:RegisterView = storyboard.instantiateViewControllerWithIdentifier(RegisterViewControllerIdentifier) as! RegisterView
         return registerViewController
     }
     

@@ -2,7 +2,7 @@
 //  RegisterPresenter.swift
 //  SimpleLogin
 //
-//  Created by Pawar, Santosh-CW on 4/14/15.
+//  Created by Santosh Pawar on 4/13/15.
 //  Copyright (c) 2015 Santosh. All rights reserved.
 //
 
@@ -17,8 +17,8 @@ class RegisterPresenter: NSObject,RegisterViewInterface {
     func showAlertMessage(message:String, withTitle:String){
         var alertController:UIAlertController = UIAlertController(title: withTitle, message: message, preferredStyle: UIAlertControllerStyle.Alert)
         
-        var okAction:UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) { (action:UIAlertAction!) -> Void in
-            self.dismissOkAlert(alertController)
+        var okAction:UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) { (action) -> Void in
+            self.registerWireframe?.dismissAlert(alertController)
         }
         
         alertController.addAction(okAction)

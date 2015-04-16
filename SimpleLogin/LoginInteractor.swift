@@ -2,7 +2,7 @@
 //  LoginInteractor.swift
 //  SimpleLogin
 //
-//  Created by Pawar, Santosh-CW on 4/15/15.
+//  Created by Santosh Pawar on 4/13/15.
 //  Copyright (c) 2015 Santosh. All rights reserved.
 //
 
@@ -27,11 +27,11 @@ class LoginInteractor {
     }
     
     func getLoginDetails(userName:AnyObject, userPassword:AnyObject){
-        if(loggedInUserPassword != userPassword as String){
-            presenter?.passwordDidNotMatch()
-        }
-        else if(loggedInUserName != userName as String){
+        if(loggedInUserName != userName as! String){
             presenter?.userNotFound()
+        }
+        else if(loggedInUserPassword != userPassword as! String){
+            presenter?.passwordDidNotMatch()
         }
         else{
             presenter?.showProtectedView()
